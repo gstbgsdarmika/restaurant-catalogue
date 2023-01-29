@@ -6,7 +6,7 @@ export default function Home({ restaurants }) {
       <RestaurantList restaurants={restaurants} />
     </div>
   )
-}
+};
 
 export async function getStaticProps() {
   const response = await fetch('https://restaurant-api.dicoding.dev/list');
